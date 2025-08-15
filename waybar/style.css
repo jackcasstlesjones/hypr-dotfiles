@@ -6,11 +6,14 @@
 
 /* Nord Theme Colors */
 window#waybar {
-    background-color: #2e3440;  /* Nord0 - Polar Night */
-    color: #eceff4;  /* Nord6 - Snow Storm */
+    background-color: #2e3440;
+    /* Nord0 - Polar Night */
+    color: #eceff4;
+    /* Nord6 - Snow Storm */
     transition-property: background-color;
     transition-duration: .5s;
-    padding: 500px 100px;  /* Add padding around entire bar */
+    padding: 500px 100px;
+    /* Add padding around entire bar */
     margin: 500px 100px;
 }
 
@@ -57,7 +60,8 @@ button {
 /* Nord Theme */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #88c0d0;  /* Nord8 - Frost */
+    box-shadow: inset 0 -3px #88c0d0;
+    /* Nord8 - Frost */
 }
 
 /* Original - commented out
@@ -76,7 +80,8 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #d8dee9;  /* Nord4 - Snow Storm */
+    color: #d8dee9;
+    /* Nord4 - Snow Storm */
 }
 
 /* Original - commented out
@@ -89,7 +94,8 @@ button:hover {
 
 /* Nord Theme */
 #workspaces button:hover {
-    background: #3b4252;  /* Nord1 - Polar Night */
+    background: #3b4252;
+    /* Nord1 - Polar Night */
 }
 
 /* Original - commented out
@@ -100,9 +106,12 @@ button:hover {
 
 /* Nord Theme */
 #workspaces button.focused {
-    background-color: #5e81ac;  /* Nord10 - Frost */
-    color: #eceff4;  /* Nord6 - Snow Storm */
-    box-shadow: inset 0 -3px #88c0d0;  /* Nord8 - Frost */
+    background-color: #5e81ac;
+    /* Nord10 - Frost */
+    color: #eceff4;
+    /* Nord6 - Snow Storm */
+    box-shadow: inset 0 -3px #88c0d0;
+    /* Nord8 - Frost */
 }
 
 /* Original - commented out
@@ -115,7 +124,8 @@ button:hover {
 
 /* Nord Theme */
 #workspaces button.urgent {
-    background-color: #bf616a;  /* Nord11 - Aurora */
+    background-color: #bf616a;
+    /* Nord11 - Aurora */
 }
 
 /* Original - commented out
@@ -127,8 +137,10 @@ button:hover {
 /* Hyprland workspaces specific styling */
 /* Nord Theme */
 #workspaces button.active {
-    background-color: #5e81ac;  /* Nord10 - Frost */
-    color: #eceff4;  /* Nord6 - Snow Storm */
+    background-color: #5e81ac;
+    /* Nord10 - Frost */
+    color: #eceff4;
+    /* Nord6 - Snow Storm */
 }
 
 /* Original - commented out
@@ -163,7 +175,8 @@ button:hover {
 #keyboard-state,
 #mpd {
     padding: 0 10px;
-    color: #eceff4;  /* Nord6 - Snow Storm */
+    color: #eceff4;
+    /* Nord6 - Snow Storm */
     border-radius: 10px;
     margin: 2px;
 }
@@ -197,7 +210,8 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #d8dee9;  /* Nord4 - Snow Storm */
+    color: #d8dee9;
+    /* Nord4 - Snow Storm */
     border-radius: 8px;
     margin: 2px;
 }
@@ -217,19 +231,28 @@ button:hover {
     margin: 0 4px;
 }
 
+/* Nord blue background for workspaces container */
+#workspaces {
+    background-color: #4c566a;
+    /* Nord10 - Frost */
+    border-radius: 10px;
+    padding: 2px;
+}
+
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
 
 /* Nord Theme */
 #clock {
-    background-color: #4c566a;  /* Nord3 - Polar Night */
+    background-color: #4c566a;
+    /* Nord3 - Polar Night */
 }
 
 /* Original - commented out
@@ -240,8 +263,10 @@ button:hover {
 
 /* Nord Theme */
 #battery {
-    background-color: #81a1c1;  /* Nord9 - Frost */
-    color: #2e3440;  /* Nord0 - Polar Night */
+    background-color: #81a1c1;
+    /* Nord9 - Frost */
+    color: #2e3440;
+    /* Nord0 - Polar Night */
 }
 
 /* Original - commented out
@@ -252,9 +277,12 @@ button:hover {
 */
 
 /* Nord Theme */
-#battery.charging, #battery.plugged {
-    color: #2e3440;  /* Nord0 - Polar Night */
-    background-color: #a3be8c;  /* Nord14 - Aurora */
+#battery.charging,
+#battery.plugged {
+    color: #2e3440;
+    /* Nord0 - Polar Night */
+    background-color: #a3be8c;
+    /* Nord14 - Aurora */
 }
 
 /* Original - commented out
@@ -274,8 +302,10 @@ button:hover {
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 /* Nord Theme */
 #battery.critical:not(.charging) {
-    background-color: #bf616a;  /* Nord11 - Aurora */
-    color: #eceff4;  /* Nord6 - Snow Storm */
+    background-color: #bf616a;
+    /* Nord11 - Aurora */
+    color: #eceff4;
+    /* Nord6 - Snow Storm */
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -320,8 +350,10 @@ label:focus {
 
 /* Nord Theme */
 #cpu {
-    background-color: #a3be8c;  /* Nord14 - Aurora */
-    color: #2e3440;  /* Nord0 - Polar Night */
+    background-color: #a3be8c;
+    /* Nord14 - Aurora */
+    color: #2e3440;
+    /* Nord0 - Polar Night */
 }
 
 /* Original - commented out
@@ -333,7 +365,8 @@ label:focus {
 
 /* Nord Theme */
 #memory {
-    background-color: #b48ead;  /* Nord15 - Aurora */
+    background-color: #b48ead;
+    /* Nord15 - Aurora */
 }
 
 /* Original - commented out
@@ -344,7 +377,8 @@ label:focus {
 
 /* Nord Theme */
 #disk {
-    background-color: #d08770;  /* Nord12 - Aurora */
+    background-color: #d08770;
+    /* Nord12 - Aurora */
 }
 
 /* Original - commented out
@@ -359,7 +393,8 @@ label:focus {
 
 /* Nord Theme */
 #network {
-    background-color: #5e81ac;  /* Nord10 - Frost */
+    background-color: #5e81ac;
+    /* Nord10 - Frost */
 }
 
 /* Original - commented out
@@ -370,7 +405,8 @@ label:focus {
 
 /* Nord Theme */
 #network.disconnected {
-    background-color: #bf616a;  /* Nord11 - Aurora */
+    background-color: #bf616a;
+    /* Nord11 - Aurora */
 }
 
 /* Original - commented out
@@ -381,8 +417,10 @@ label:focus {
 
 /* Nord Theme */
 #pulseaudio {
-    background-color: #ebcb8b;  /* Nord13 - Aurora */
-    color: #2e3440;  /* Nord0 - Polar Night */
+    background-color: #ebcb8b;
+    /* Nord13 - Aurora */
+    color: #2e3440;
+    /* Nord0 - Polar Night */
 }
 
 /* Original - commented out
@@ -432,11 +470,11 @@ label:focus {
     background-color: #2980b9;
 }
 
-#tray > .passive {
+#tray>.passive {
     -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
@@ -483,11 +521,11 @@ label:focus {
     min-width: 16px;
 }
 
-#keyboard-state > label {
+#keyboard-state>label {
     padding: 0 5px;
 }
 
-#keyboard-state > label.locked {
+#keyboard-state>label.locked {
     background: rgba(0, 0, 0, 0.2);
 }
 
@@ -496,7 +534,7 @@ label:focus {
 }
 
 #scratchpad.empty {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 #privacy {
