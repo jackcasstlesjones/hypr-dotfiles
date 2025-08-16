@@ -1,20 +1,21 @@
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: FontAwesome, "JetBrains Mono", monospace;
+  font-size: 13px;
 }
 
 /* Nord Theme Colors */
 window#waybar {
-    background-color: #2e3440;
-    /* Nord0 - Polar Night */
-    color: #eceff4;
-    /* Nord6 - Snow Storm */
-    transition-property: background-color;
-    transition-duration: .5s;
-    padding: 500px 100px;
-    /* Add padding around entire bar */
-    margin: 500px 100px;
+  background-color: #2e3440;
+  /* Nord0 - Polar Night */
+  color: #eceff4;
+  /* Nord6 - Snow Storm */
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  padding: 500px 100px;
+  /* Add padding around entire bar */
+  margin: 500px 100px;
+  font-family: "JetBrains Mono";
 }
 
 /* Original colors - commented out
@@ -27,7 +28,7 @@ window#waybar {
 */
 
 window#waybar.hidden {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 /*
@@ -40,28 +41,28 @@ window#waybar.solo {
 */
 
 window#waybar.termite {
-    background-color: #3F3F3F;
+  background-color: #3f3f3f;
 }
 
 window#waybar.chromium {
-    background-color: #000000;
-    border: none;
+  background-color: #000000;
+  border: none;
 }
 
 button {
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
-    border: none;
-    border-radius: 0;
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each button name */
+  border: none;
+  border-radius: 0;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 /* Nord Theme */
 button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #88c0d0;
-    /* Nord8 - Frost */
+  background: inherit;
+  /* box-shadow: inset 0 -3px #88c0d0; */
+  /* Nord8 - Frost */
 }
 
 /* Original - commented out
@@ -72,16 +73,13 @@ button:hover {
 */
 
 /* you can set a style on hover for any module like this */
-#pulseaudio:hover {
-    background-color: #a37800;
-}
 
 /* Nord Theme */
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #d8dee9;
-    /* Nord4 - Snow Storm */
+  padding: 0 5px;
+  background-color: transparent;
+  color: #d8dee9;
+  /* Nord4 - Snow Storm */
 }
 
 /* Original - commented out
@@ -94,8 +92,8 @@ button:hover {
 
 /* Nord Theme */
 #workspaces button:hover {
-    background: #3b4252;
-    /* Nord1 - Polar Night */
+  background: #3b4252;
+  /* Nord1 - Polar Night */
 }
 
 /* Original - commented out
@@ -106,12 +104,12 @@ button:hover {
 
 /* Nord Theme */
 #workspaces button.focused {
-    background-color: #5e81ac;
-    /* Nord10 - Frost */
-    color: #eceff4;
-    /* Nord6 - Snow Storm */
-    box-shadow: inset 0 -3px #88c0d0;
-    /* Nord8 - Frost */
+  background-color: #5e81ac;
+  /* Nord10 - Frost */
+  color: #eceff4;
+  /* Nord6 - Snow Storm */
+  box-shadow: inset 0 -3px #88c0d0;
+  /* Nord8 - Frost */
 }
 
 /* Original - commented out
@@ -124,8 +122,8 @@ button:hover {
 
 /* Nord Theme */
 #workspaces button.urgent {
-    background-color: #bf616a;
-    /* Nord11 - Aurora */
+  background-color: #bf616a;
+  /* Nord11 - Aurora */
 }
 
 /* Original - commented out
@@ -137,10 +135,10 @@ button:hover {
 /* Hyprland workspaces specific styling */
 /* Nord Theme */
 #workspaces button.active {
-    background-color: #5e81ac;
-    /* Nord10 - Frost */
-    color: #eceff4;
-    /* Nord6 - Snow Storm */
+  background-color: #5e81ac;
+  /* Nord10 - Frost */
+  color: #eceff4;
+  /* Nord6 - Snow Storm */
 }
 
 /* Original - commented out
@@ -151,8 +149,8 @@ button:hover {
 */
 
 #mode {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+  background-color: #64727d;
+  box-shadow: inset 0 -3px #ffffff;
 }
 
 /* Nord Theme */
@@ -174,11 +172,12 @@ button:hover {
 #power-profiles-daemon,
 #keyboard-state,
 #mpd {
-    padding: 0 10px;
-    color: #eceff4;
-    /* Nord6 - Snow Storm */
-    border-radius: 10px;
-    margin: 2px;
+  background-color: #4c566a;
+  padding: 0 10px;
+  color: #eceff4;
+  /* Nord6 - Snow Storm */
+  border-radius: 10px;
+  margin: 2px;
 }
 
 /* Original - commented out
@@ -208,12 +207,12 @@ button:hover {
 
 /* Nord Theme */
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #d8dee9;
-    /* Nord4 - Snow Storm */
-    border-radius: 8px;
-    margin: 2px;
+  padding: 0 5px;
+  background-color: transparent;
+  color: #d8dee9;
+  /* Nord4 - Snow Storm */
+  border-radius: 8px;
+  margin: 2px;
 }
 
 /* Original - commented out
@@ -228,31 +227,31 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+  margin: 0 4px;
 }
 
 /* Nord blue background for workspaces container */
 #workspaces {
-    background-color: #4c566a;
-    /* Nord10 - Frost */
-    border-radius: 10px;
-    padding: 2px;
+  background-color: #4c566a;
+  /* Nord10 - Frost */
+  border-radius: 10px;
+  padding: 2px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left>widget:first-child>#workspaces {
-    margin-left: 0;
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right>widget:last-child>#workspaces {
-    margin-right: 0;
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
 }
 
 /* Nord Theme */
 #clock {
-    background-color: #4c566a;
-    /* Nord3 - Polar Night */
+  background-color: #4c566a;
+  /* Nord3 - Polar Night */
 }
 
 /* Original - commented out
@@ -263,10 +262,10 @@ button:hover {
 
 /* Nord Theme */
 #battery {
-    background-color: #81a1c1;
-    /* Nord9 - Frost */
-    color: #2e3440;
-    /* Nord0 - Polar Night */
+  background-color: #81a1c1;
+  /* Nord9 - Frost */
+  color: #2e3440;
+  /* Nord0 - Polar Night */
 }
 
 /* Original - commented out
@@ -279,10 +278,10 @@ button:hover {
 /* Nord Theme */
 #battery.charging,
 #battery.plugged {
-    color: #2e3440;
-    /* Nord0 - Polar Night */
-    background-color: #a3be8c;
-    /* Nord14 - Aurora */
+  color: #2e3440;
+  /* Nord0 - Polar Night */
+  background-color: #a3be8c;
+  /* Nord14 - Aurora */
 }
 
 /* Original - commented out
@@ -293,24 +292,24 @@ button:hover {
 */
 
 @keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 /* Nord Theme */
 #battery.critical:not(.charging) {
-    background-color: #bf616a;
-    /* Nord11 - Aurora */
-    color: #eceff4;
-    /* Nord6 - Snow Storm */
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  background-color: #bf616a;
+  /* Nord11 - Aurora */
+  color: #eceff4;
+  /* Nord6 - Snow Storm */
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /* Original - commented out
@@ -326,35 +325,35 @@ button:hover {
 */
 
 #power-profiles-daemon {
-    padding-right: 15px;
+  padding-right: 15px;
 }
 
 #power-profiles-daemon.performance {
-    background-color: #f53c3c;
-    color: #ffffff;
+  background-color: #f53c3c;
+  color: #ffffff;
 }
 
 #power-profiles-daemon.balanced {
-    background-color: #2980b9;
-    color: #ffffff;
+  background-color: #2980b9;
+  color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
+  background-color: #2ecc71;
+  color: #000000;
 }
 
 label:focus {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 /* Nord Theme */
-#cpu {
-    background-color: #a3be8c;
-    /* Nord14 - Aurora */
-    color: #2e3440;
-    /* Nord0 - Polar Night */
-}
+/* #cpu { */
+/* background-color: #a3be8c; */
+/* Nord14 - Aurora */
+/* color: #2e3440; */
+/* Nord0 - Polar Night */
+/* } */
 
 /* Original - commented out
 #cpu {
@@ -364,10 +363,10 @@ label:focus {
 */
 
 /* Nord Theme */
-#memory {
-    background-color: #b48ead;
-    /* Nord15 - Aurora */
-}
+/* #memory { */
+/*   background-color: #b48ead; */
+/*  Nord15 - Aurora */
+/* } */
 
 /* Original - commented out
 #memory {
@@ -377,8 +376,8 @@ label:focus {
 
 /* Nord Theme */
 #disk {
-    background-color: #d08770;
-    /* Nord12 - Aurora */
+  background-color: #d08770;
+  /* Nord12 - Aurora */
 }
 
 /* Original - commented out
@@ -388,14 +387,14 @@ label:focus {
 */
 
 #backlight {
-    background-color: #90b1b1;
+  background-color: #90b1b1;
 }
 
 /* Nord Theme */
-#network {
-    background-color: #5e81ac;
-    /* Nord10 - Frost */
-}
+/* #network { */
+/*   background-color: #5e81ac; */
+/*   Nord10 - Frost */
+/* } */
 
 /* Original - commented out
 #network {
@@ -405,8 +404,8 @@ label:focus {
 
 /* Nord Theme */
 #network.disconnected {
-    background-color: #bf616a;
-    /* Nord11 - Aurora */
+  background-color: #bf616a;
+  /* Nord11 - Aurora */
 }
 
 /* Original - commented out
@@ -416,12 +415,12 @@ label:focus {
 */
 
 /* Nord Theme */
-#pulseaudio {
-    background-color: #ebcb8b;
-    /* Nord13 - Aurora */
-    color: #2e3440;
-    /* Nord0 - Polar Night */
-}
+/* #pulseaudio { */
+/*   background-color: #ebcb8b; */
+/*   Nord13 - Aurora */
+/*   color: #2e3440; */
+/*   Nord0 - Polar Night */
+/* } */
 
 /* Original - commented out
 #pulseaudio {
@@ -431,129 +430,121 @@ label:focus {
 */
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+  background-color: #90b1b1;
+  color: #2a5c45;
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+  background-color: #fff0f5;
+  color: #000000;
 }
 
 #wireplumber.muted {
-    background-color: #f53c3c;
+  background-color: #f53c3c;
 }
 
 #custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
+  background-color: #66cc99;
+  color: #2a5c45;
+  min-width: 100px;
 }
 
 #custom-media.custom-spotify {
-    background-color: #66cc99;
+  background-color: #66cc99;
 }
 
 #custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
-#temperature {
-    background-color: #f0932b;
+  background-color: #ffa000;
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+  background-color: #eb4d4b;
 }
 
-#tray {
-    background-color: #2980b9;
+#tray > .passive {
+  -gtk-icon-effect: dim;
 }
 
-#tray>.passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray>.needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+  background-color: #2d3436;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+  background-color: #ecf0f1;
+  color: #2d3436;
 }
 
 #mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
+  background-color: #66cc99;
+  color: #2a5c45;
 }
 
 #mpd.disconnected {
-    background-color: #f53c3c;
+  background-color: #f53c3c;
 }
 
 #mpd.stopped {
-    background-color: #90b1b1;
+  background-color: #90b1b1;
 }
 
 #mpd.paused {
-    background-color: #51a37a;
+  background-color: #51a37a;
 }
 
 #language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
+  background: #00b093;
+  color: #740864;
+  padding: 0 5px;
+  margin: 0 5px;
+  min-width: 16px;
 }
 
 #keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
+  background: #97e1ad;
+  color: #000000;
+  padding: 0 0px;
+  margin: 0 5px;
+  min-width: 16px;
 }
 
-#keyboard-state>label {
-    padding: 0 5px;
+#keyboard-state > label {
+  padding: 0 5px;
 }
 
-#keyboard-state>label.locked {
-    background: rgba(0, 0, 0, 0.2);
+#keyboard-state > label.locked {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #scratchpad {
-    background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #scratchpad.empty {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 #privacy {
-    padding: 0;
+  padding: 0;
 }
 
 #privacy-item {
-    padding: 0 5px;
-    color: white;
+  padding: 0 5px;
+  color: white;
 }
 
 #privacy-item.screenshare {
-    background-color: #cf5700;
+  background-color: #cf5700;
 }
 
 #privacy-item.audio-in {
-    background-color: #1ca000;
+  background-color: #1ca000;
 }
 
 #privacy-item.audio-out {
-    background-color: #0069d4;
+  background-color: #0069d4;
 }
