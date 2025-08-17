@@ -1,3 +1,6 @@
+/* Orange Theme System - sed replaces this line */
+@import url("./nord-theme.css");
+
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: FontAwesome, "JetBrains Mono", monospace;
@@ -7,9 +10,9 @@
 
 /* Nord Theme Colors */
 window#waybar {
-  background-color: #2e3440;
+  /* background-color: #2e3440; */
   /* Nord0 - Polar Night */
-  color: #eceff4;
+  /* color: #eceff4; */
   /* Nord6 - Snow Storm */
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -70,7 +73,7 @@ button:hover {
 #workspaces button {
   padding: 0 5px;
   background-color: transparent;
-  color: #d8dee9;
+  /* color: #d8dee9; */
   /* Nord4 - Snow Storm */
 }
 
@@ -127,9 +130,9 @@ button:hover {
 /* Hyprland workspaces specific styling */
 /* Nord Theme */
 #workspaces button.active {
-  background-color: #5e81ac;
+  /* background-color: #5e81ac; */
   /* Nord10 - Frost */
-  color: #eceff4;
+  /* color: #eceff4; */
   /* Nord6 - Snow Storm */
 }
 
@@ -146,6 +149,7 @@ button:hover {
 }
 
 /* Nord Theme */
+/* Module backgrounds now controlled by theme files */
 #clock,
 #battery,
 #cpu,
@@ -164,9 +168,9 @@ button:hover {
 #power-profiles-daemon,
 #keyboard-state,
 #mpd {
-  background-color: #4c566a;
+  /* background-color: #4c566a; */
   padding: 0 10px;
-  color: #eceff4;
+  /* color: #eceff4; */
   /* Nord6 - Snow Storm */
   border-radius: 10px;
   margin: 0 2px;
@@ -190,7 +194,7 @@ button:hover {
 
 /* Nord blue background for workspaces container */
 #workspaces {
-  background-color: #4c566a;
+  /* background-color: #4c566a; */
   /* Nord10 - Frost */
   border-radius: 10px;
   padding: 2px;
@@ -208,6 +212,7 @@ button:hover {
 
 /* Nord Theme */
 #clock {
+  border: white 1px solid;
   letter-spacing: 2px;
   font-weight: 700;
   /* font-size: 16px; */
@@ -216,18 +221,11 @@ button:hover {
 
 /* Nord Theme */
 #battery {
-  background-color: #81a1c1;
+  /* background-color: #81a1c1; */
   /* Nord9 - Frost */
   color: #2e3440;
   /* Nord0 - Polar Night */
 }
-
-/* Original - commented out
-#battery {
-    background-color: #ffffff;
-    color: #000000;
-}
-*/
 
 /* Nord Theme */
 #battery.charging,
